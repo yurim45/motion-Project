@@ -59,9 +59,9 @@ class App {
     const element = document.querySelector(selector)! as HTMLButtonElement;
     element.addEventListener('click', () => {
       const dialog = new InputDialog();
-      const mediaSection = new InputComponent();
+      const input = new InputComponent();
 
-      dialog.addChild(mediaSection);
+      dialog.addChild(input);
       dialog.attachTo(this.dialogRoot);
 
       dialog.setOnCloseListener(() => {
