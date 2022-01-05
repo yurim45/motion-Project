@@ -138,7 +138,7 @@ export class PageComponent
         dropY < srcElement.y ? 'beforebegin' : 'afterend'
       );
     }
-    this.onDropped();
+    this.dropTarget.onDropped();
   }
 
   addChild(section: Component) {
